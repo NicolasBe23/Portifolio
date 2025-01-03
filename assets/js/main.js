@@ -88,14 +88,14 @@ function scrollActive() {
       sectionTop = current.offsetTop - 50,
       sectionId = current.getAttribute("id");
 
-    if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
-      document
-        .querySelector(".nav-menu a[href*=" + sectionId + "]")
-        .classList.add("active-link");
-    } else {
-      document
-        .querySelector(".nav-menu a[href*=" + sectionId + "]")
-        .classList.remove("active-link");
+    const link = document.querySelector(".nav-menu a[href*=" + sectionId + "]");
+
+    if (link) {
+      if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+        link.classList.add("active-link");
+      } else {
+        link.classList.remove("active-link");
+      }
     }
   });
 }

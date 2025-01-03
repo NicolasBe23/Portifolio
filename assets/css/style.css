@@ -24,6 +24,7 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 ::-webkit-scrollbar {
@@ -68,7 +69,6 @@ body {
 }
 .container {
   width: 100%;
-  position: relative;
 }
 
 nav {
@@ -702,6 +702,12 @@ footer {
 }
 /* ----- MEDIA QUERY == 540px / RESPONSIVE ----- */
 @media only screen and (max-width: 540px) {
+  .html {
+    overflow-x: hidden;
+  }
+  body {
+    overflow: hidden;
+  }
   .about-containers {
     flex-direction: column;
   }
