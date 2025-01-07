@@ -9,6 +9,11 @@
       href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
     />
 
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/css/flag-icons.min.css"
+    />
+
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="icon" href="assets/images/Favicon.png" type="image/x-icon" />
     <title>Hi, I'm Nicolas Silva</title>
@@ -23,31 +28,35 @@
         <div class="nav-menu" id="myNavMenu">
           <ul class="nav_menu_list">
             <li class="nav_list">
-              <a href="#home" class="nav-link active-link">Home</a>
+              <a href="#home" class="nav-link active-link" data-key="menu_home">Home</a>
               <div class="circle"></div>
             </li>
             <li class="nav_list">
-              <a href="#about" class="nav-link">About</a>
+              <a href="#about" class="nav-link" data-key="menu_about">About</a>
               <div class="circle"></div>
             </li>
             <li class="nav_list">
-              <a href="#projects" class="nav-link">Projects</a>
+              <a href="#projects" class="nav-link" data-key="menu_projects">Projects</a>
               <div class="circle"></div>
             </li>
             <li class="nav_list">
-              <a href="#contact" class="nav-link">Contact</a>
+              <a href="#contact" class="nav-link" data-key="menu_contact">Contact</a>
               <div class="circle"></div>
             </li>
           </ul>
         </div>
+        <button class="icon_language" id="languageToggle"><img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/br.svg" alt="Brazilian Flag" id="flagIcon" /></button>
+
         <div class="nav-button">
           <button class="btn" onclick="window.open('assets/images/Cv_Nicolas_Silva.pdf')">
             Download CV <i class="uil uil-file-alt"></i>
           </button>
+          
         </div>
         <div class="nav-menu-btn">
           <i class="uil uil-bars" onclick="myMenuFunction()"></i>
         </div>
+
       </nav>
 
       <main class="wrapper">
@@ -60,18 +69,18 @@
               <p>I'm <span class="typedText"></span></p>
             </div>
             <div class="featured-text-info">
-              <p>
+              <p data-key="featured_description">
                 Frontend developer with a passion for creating visually stunning
                 and user-friendly websites.
               </p>
             </div>
             <div class="featured-text-btn">
-              <button class="btn blue-btn" onclick="location.href='#contact'">
+              <button class="btn blue-btn" onclick="location.href='#contact'" data-key="menu_contact">
                 Contact Me
               </button>
               <button
                 class="btn"
-                onclick="window.open('assets/images/Cv_Nicolas_Silva.pdf')"
+                onclick="window.open('assets/images/Cv_Nicolas_Silva.pdf')" 
               >
                 Download CV <i class="uil uil-file-alt"></i>
               </button>
@@ -101,13 +110,13 @@
 
         <section class="section" id="about">
           <div class="top-header">
-            <h1>About Me</h1>
+            <h1 data-key="menu_about">About Me</h1>
           </div>
           <div class="row">
             <div class="col">
               <div class="about-info">
-                <h3>My introduction</h3>
-                <p>
+                <h3 data-key="my_introduction">My introduction</h3>
+                <p data-key="menu_description">
                   Currently enrolled in the Web Development and Multimedia
                   program at the Polytechnic Institute of Cávado and Ave (IPCA),
                   I am eager to gain practical experience in the field,
@@ -129,25 +138,25 @@
         <div class="project-container">
           <div class="project-box">
             <i class="uil uil-briefcase-alt"></i>
-            <h3>Education</h3>
-            <label>Complete secondary education</label>
-            <label>Currently studyng Web
+            <h3 data-key="Education">Education</h3>
+            <label data-key="secondary">Complete secondary education</label>
+            <label data-key="web">Currently studyng Web
               Development</label>
           </div>
       
           <div class="project-box">
             <i class="uil uil-award"></i>
-            <h3>Experience</h3>
-            <label>1 year</label>
-            <label>Web Developer</label>
+            <h3 data-key="Experience">Experience</h3>
+            <label data-key="year">1 year</label>
+            <label data-key="web_developer">Web Developer</label>
           </div>
         </div>
       </section>
 
         <section class="section" id="experience">
           <div class="top-header">
-            <span>Explore my</span>
-            <h1>Experience</h1>
+            <span data-key="menu_explore">Explore my</span>
+            <h1 data-key="menu_experience">Experience</h1>
           </div>
           <div class="col">
             <div class="skills-box">
@@ -182,8 +191,8 @@
 
         <section class="section" id="projects">
           <div class="top-header">
-            <span>See my</span>
-            <h1>Projects</h1>
+            <span data-key="menu_see">See my</span>
+            <h1 data-key="menu_projects" >Projects</h1>
           </div>
 
           <div class="experience-details-container">
@@ -220,7 +229,7 @@
                     class="project-img"
                   />
                 </div>
-                <h3 class="experience-sub-title project-title">Project Two</h3>
+                <h3 class="experience-sub-title project-title" data-key="menu_project_two">Project Two</h3>
                 <div class="btn-container-projects">
                   <button class="projects-btn" onclick="window.open('')">
                     GitHub
@@ -238,7 +247,7 @@
                     class="project-img"
                   />
                 </div>
-                <h3 class="experience-sub-title project-title">
+                <h3 class="experience-sub-title project-title" data-key="menu_project_three">
                   Project Three
                 </h3>
                 <div class="btn-container-projects">
@@ -256,19 +265,19 @@
 
         <section class="section" id="contact">
           <div class="top-header">
-            <h1>Get in touch</h1>
-            <span>Do you have a project in your mind, contact me here</span>
+            <h1 data-key="menu_contact_two">Get in touch</h1>
+            <span data-key="menu_contact_description">Have a project in mind, contact me</span>
           </div>
           <div class="row">
             <div class="col">
               <div class="contact-info">
-                <h2>Find Me <i class="uil uil-corner-right-down"></i></h2>
+                <h2 data-key="menu_find_me">Find Me <i class="uil uil-corner-right-down"></i></h2>
                 <p>
                   <i class="uil uil-envelope"></i> Email:
                   nicolasbezerra13@gmail.com
                 </p>
                 <p><i class="uil uil-phone"></i> Tel: +351 968 899 318</p>
-                <p>
+                <p data-key="menu_location">
                   <i class="uil uil-map-marker"></i> Location: Braga, Portugal
                 </p>      
               </div>
@@ -283,17 +292,17 @@
         </div>
         <div class="middle-footer">
           <ul class="footer-menu">
-            <li class="footer_menu_list">
-              <a href="#home">Home</a>
+            <li class="footer_menu_list" >
+              <a href="#home" data-key="menu_home">Home</a>
             </li>
             <li class="footer_menu_list">
-              <a href="#about">About</a>
+              <a href="#about" data-key="menu_about">About</a>
             </li>
             <li class="footer_menu_list">
-              <a href="#projects">Projects</a>
+              <a href="#projects" data-key="menu_projects">Projects</a>
             </li>
             <li class="footer_menu_list">
-              <a href="#contact">Contact</a>
+              <a href="#contact" data-key="menu_contact">Contact</a>
             </li>
           </ul>
         </div>

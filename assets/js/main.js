@@ -101,3 +101,94 @@ function scrollActive() {
 }
 
 window.addEventListener("scroll", scrollActive);
+
+const translations = {
+  en: {
+    menu_home: "Home",
+    menu_about: "About",
+    menu_projects: "Projects",
+    menu_contact: "Contact Me",
+    featured_description:
+      "Frontend developer with a passion for creating visually stunning and user-friendly websites.",
+    btn_contact: "Contact Me",
+    menu_about: "About",
+    my_introduction: "My introduction",
+    menu_description:
+      "Currently enrolled in the Web Development and Multimedia program at the Polytechnic Institute of Cávado and Ave (IPCA), I am eager to gain practical experience in the field, enhancing my theoretical knowledge and developing skills relevant to my future career. Although still in training, I have already developed skills in languages such as HTML, CSS, JavaScript, TypeScript, Node Js, React, Tailwind, Bootstrap, Git. I am confident that my motivation, interpersonal skills, and eagerness to learn will be valuable assets. Highly capable of working in teams, dedicated to my tasks, results-oriented, focused on process optimization, and digital transformation. Organized, responsible, and flexible.",
+    Education: "Education",
+    secondary: "Complete secondary education",
+    web: "Currently studyng Web Development",
+    Experience: "Experience",
+    year: "1 year",
+    web_developer: "Web Developer",
+    menu_explore: "Explore my",
+    menu_experience: "Experience",
+    menu_see: "See my",
+    menu_projects: "Projects",
+    menu_project_two: "Project two",
+    menu_project_three: "Project three",
+    menu_contact_two: "Get in touch",
+    menu_contact_description: "Have a project in mind, contact me",
+    menu_find_me: "Find Me",
+    menu_location: "Location: Braga, Portugal",
+  },
+  pt: {
+    menu_home: "Início",
+    menu_about: "Sobre",
+    menu_projects: "Projetos",
+    menu_contact: "Contato",
+    featured_description:
+      "Desenvolvedor Frontend com paixão por criar sites visualmente impressionantes e fáceis de usar.",
+    btn_contact: "Entre em Contato",
+    menu_about: "Sobre",
+    my_introduction: "Minha apresentação",
+    menu_description:
+      "Atualmente cursando o Programa de Desenvolvimento Web e Multimédia na Instituição Politecnica do Cávado e Ave (IPCA), estou ansioso para ganhar experiência prática na área, aprimorando meus conhecimentos teóricos e desenvolvendo habilidades relevantes para minha futura carreira. Embora ainda em treinamento, já desenvolvi habilidades em linguagens como HTML, CSS, JavaScript, TypeScript, Node Js, React, Tailwind, Bootstrap, Git. Estou confiante de que minha motivação, habilidades interpessoais e ânsia de aprender serão ativos valiosos. Altamente capaz de trabalhar em equipe, dedicado às minhas tarefas, orientado a resultados, focado na otimização de processos e transformação digital. Organizado, responsável e flexível.",
+    Education: "Educação",
+    secondary: "Ensino secundário completo",
+    web: "Atualmente estudando Desenvolvimento Web",
+    Experience: "Experiência",
+    year: "1 ano",
+    web_developer: "Desenvolvedor Web",
+    menu_explore: "Explore minha",
+    menu_experience: "Experiência",
+    menu_see: "Veja meus",
+    menu_projects: "Projetos",
+    menu_project_two: "Projeto dois",
+    menu_project_three: "Projeto tres",
+    menu_contact_two: "Entre em contato",
+    menu_contact_description:
+      "Tem um projeto em sua mente, entre em contato comigo",
+    menu_find_me: "Encontre-me",
+    menu_location: "Localização: Braga, Portugal",
+  },
+};
+
+// Idioma atual
+let currentLanguage = "en";
+
+// Elementos de tradução
+const elementsToTranslate = document.querySelectorAll("[data-key]");
+
+// Função para trocar idioma
+function toggleLanguage() {
+  currentLanguage = currentLanguage === "en" ? "pt" : "en";
+  elementsToTranslate.forEach((el) => {
+    const key = el.getAttribute("data-key");
+    if (translations[currentLanguage][key]) {
+      el.innerHTML = translations[currentLanguage][key];
+    }
+  });
+
+  // Atualiza o texto do botão de alternância
+  if (currentLanguage === "en") {
+    languageToggle.innerHTML = `<img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/br.svg" alt="Brazilian Flag" />`;
+  } else {
+    languageToggle.innerHTML = `<img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/us.svg" alt="English Flag" />`;
+  }
+}
+
+// Adiciona evento ao botão de idioma
+document
+  .getElementById("languageToggle")
+  .addEventListener("click", toggleLanguage);

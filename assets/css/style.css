@@ -120,6 +120,32 @@ nav {
   font-size: 28px;
   cursor: pointer;
 }
+
+#languageToggle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: none;
+  width: 50px;
+  height: 50px;
+  margin-top: 20px;
+  border: 0;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#languageToggle:hover {
+  background: #efefef;
+  transition: 0.4s;
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.25);
+}
+
+#languageToggle img {
+  width: 25px;
+  height: 25px;
+  border-radius: 10px;
+}
+
 .active-link {
   position: relative;
   color: var(--first-color);
