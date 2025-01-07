@@ -146,7 +146,7 @@ const translations = {
       "Atualmente cursando o Programa de Desenvolvimento Web e Multimédia na Instituição Politecnica do Cávado e Ave (IPCA), estou ansioso para ganhar experiência prática na área, aprimorando meus conhecimentos teóricos e desenvolvendo habilidades relevantes para minha futura carreira. Embora ainda em treinamento, já desenvolvi habilidades em linguagens como HTML, CSS, JavaScript, TypeScript, Node Js, React, Tailwind, Bootstrap, Git. Estou confiante de que minha motivação, habilidades interpessoais e ânsia de aprender serão ativos valiosos. Altamente capaz de trabalhar em equipe, dedicado às minhas tarefas, orientado a resultados, focado na otimização de processos e transformação digital. Organizado, responsável e flexível.",
     Education: "Educação",
     secondary: "Ensino secundário completo",
-    web: "Atualmente estudando Desenvolvimento Web",
+    web: "Cursando Desenvolvimento web",
     Experience: "Experiência",
     year: "1 ano",
     web_developer: "Desenvolvedor Web",
@@ -164,13 +164,10 @@ const translations = {
   },
 };
 
-// Idioma atual
 let currentLanguage = "en";
 
-// Elementos de tradução
 const elementsToTranslate = document.querySelectorAll("[data-key]");
 
-// Função para trocar idioma
 function toggleLanguage() {
   currentLanguage = currentLanguage === "en" ? "pt" : "en";
   elementsToTranslate.forEach((el) => {
@@ -180,7 +177,6 @@ function toggleLanguage() {
     }
   });
 
-  // Atualiza o texto do botão de alternância
   if (currentLanguage === "en") {
     languageToggle.innerHTML = `<img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/br.svg" alt="Brazilian Flag" />`;
   } else {
@@ -188,7 +184,6 @@ function toggleLanguage() {
   }
 }
 
-// Adiciona evento ao botão de idioma
 document
   .getElementById("languageToggle")
   .addEventListener("click", toggleLanguage);

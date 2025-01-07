@@ -57,6 +57,7 @@ html {
 .btn:hover {
   background: var(--second-color);
   color: var(--color-white);
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.25);
 }
 
 i {
@@ -121,29 +122,25 @@ nav {
   cursor: pointer;
 }
 
-#languageToggle {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: none;
-  width: 50px;
-  height: 50px;
-  margin-top: 20px;
-  border: 0;
-  border-radius: 50%;
+.icon_language {
+  padding: 12px 20px;
+  margin-top: 10px;
+  background: #efefef;
+  border: none;
+  border-radius: 10px;
   cursor: pointer;
+  transition: 0.4s;
 }
 
-#languageToggle:hover {
+.icon_language:hover {
   background: #efefef;
   transition: 0.4s;
   box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.25);
 }
 
-#languageToggle img {
+.icon_language img {
   width: 25px;
   height: 25px;
-  border-radius: 10px;
 }
 
 .active-link {
