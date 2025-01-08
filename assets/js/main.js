@@ -125,6 +125,7 @@ const translations = {
     menu_experience: "Experience",
     menu_see: "See my",
     menu_projects: "Projects",
+    menu_project_one: "Project one",
     menu_project_two: "Project two",
     menu_project_three: "Project three",
     menu_contact_two: "Get in touch",
@@ -153,6 +154,7 @@ const translations = {
     menu_experience: "Experiência",
     menu_see: "Veja meus",
     menu_projects: "Projetos",
+    menu_project_one: "Projeto um",
     menu_project_two: "Projeto dois",
     menu_project_three: "Projeto três",
     menu_contact_two: "Entre em contato",
@@ -178,7 +180,7 @@ function toggleLanguage() {
   if (currentLanguage === "en") {
     languageToggle.innerHTML = `<img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/br.svg" alt="Brazilian Flag" />`;
   } else {
-    languageToggle.innerHTML = `<img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/us.svg" alt="English Flag" />`;
+    languageToggle.innerHTML = `<img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/flags/4x3/gb.svg" alt="English Flag" />`;
   }
 }
 
