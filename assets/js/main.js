@@ -107,7 +107,7 @@ const translations = {
     menu_home: "Home",
     menu_about: "About",
     menu_projects: "Projects",
-    menu_contact: "Contact Me",
+    menu_contact: "Contact",
     featured_description:
       "Frontend developer with a passion for creating visually stunning and user-friendly websites.",
     btn_contact: "Contact Me",
