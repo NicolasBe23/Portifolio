@@ -130,7 +130,6 @@ const translations = {
     menu_contact_two: "Get in touch",
     menu_contact_description: "Have a project in mind, contact me",
     menu_find_me: "Find Me",
-    menu_location: "Location: Braga, Portugal",
   },
   pt: {
     menu_home: "Início",
@@ -160,7 +159,6 @@ const translations = {
     menu_contact_description:
       "Tem um projeto em sua mente, entre em contato comigo",
     menu_find_me: "Encontre-me",
-    menu_location: "Localização: Braga, Portugal",
   },
 };
 
