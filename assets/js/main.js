@@ -59,7 +59,7 @@ sr.reveal(".project-box", { interval: 200 });
 sr.reveal(".top-header", {});
 
 const srLeft = ScrollReveal({
-  origin: "left",
+  origin: "top",
   distance: "80px",
   duration: 1000,
   reset: true,
@@ -155,7 +155,7 @@ const translations = {
     menu_see: "Veja meus",
     menu_projects: "Projetos",
     menu_project_two: "Projeto dois",
-    menu_project_three: "Projeto tres",
+    menu_project_three: "Projeto três",
     menu_contact_two: "Entre em contato",
     menu_contact_description:
       "Tem um projeto em sua mente, entre em contato comigo",
