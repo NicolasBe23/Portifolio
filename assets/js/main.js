@@ -114,7 +114,7 @@ const translations = {
     menu_about: "About",
     my_introduction: "My introduction",
     menu_description:
-      "Currently enrolled in the Web Development and Multimedia program at the Polytechnic Institute of Cávado and Ave (IPCA), I am eager to gain practical experience in the field, enhancing my theoretical knowledge and developing skills relevant to my future career. Although still in training, I have already developed skills in languages such as HTML, CSS, JavaScript, TypeScript, Node Js, React, Tailwind, Bootstrap, Git. I am confident that my motivation, interpersonal skills, and eagerness to learn will be valuable assets. Highly capable of working in teams, dedicated to my tasks, results-oriented, focused on process optimization, and digital transformation. Organized, responsible, and flexible.",
+      "Currently enrolled in the Web Development and Multimedia program at the Polytechnic Institute of Cávado and Ave (IPCA), I am eager to gain practical experience in the field, enhancing my theoretical knowledge and developing skills relevant to my future career. Although still in training, I have already developed skills in languages such as HTML, CSS, JavaScript, TypeScript, Node Js, React, Tailwind, Bootstrap, Git. I am confident in my motivation, interpersonal skills, and eagerness to learn. Highly capable of working in teams, dedicated to my tasks, results-oriented, focused on process optimization, and digital transformation. Organized, responsible, and flexible.",
     Education: "Education",
     secondary: "Complete secondary education",
     web: "Currently studyng Web Development",
@@ -143,7 +143,7 @@ const translations = {
     menu_about: "Sobre",
     my_introduction: "Minha apresentação",
     menu_description:
-      "Atualmente cursando o Programa de Desenvolvimento Web e Multimédia na Instituição Politecnica do Cávado e Ave (IPCA), estou ansioso para ganhar experiência prática na área, aprimorando meus conhecimentos teóricos e desenvolvendo habilidades relevantes para minha futura carreira. Embora ainda em treinamento, já desenvolvi habilidades em linguagens como HTML, CSS, JavaScript, TypeScript, Node Js, React, Tailwind, Bootstrap, Git. Estou confiante de que minha motivação, habilidades interpessoais e ânsia de aprender serão ativos valiosos. Altamente capaz de trabalhar em equipe, dedicado às minhas tarefas, orientado a resultados, focado na otimização de processos e transformação digital. Organizado, responsável e flexível.",
+      "Atualmente cursando Desenvolvimento Web e Multimédia na Instituição Politecnica do Cávado e Ave (IPCA), estou ansioso para ganhar experiência prática na área, aprimorando meus conhecimentos teóricos e desenvolvendo habilidades relevantes para minha futura carreira. Embora ainda em treinamento, já desenvolvi habilidades em linguagens como HTML, CSS, JavaScript, TypeScript, Node Js, React, Tailwind, Bootstrap, Git. Estou confiante na minha motivação, habilidades interpessoais e ânsia de aprender. Altamente capaz de trabalhar em equipe, dedicado às minhas tarefas, orientado a resultados, focado na otimização de processos e transformação digital. Organizado, responsável e flexível.",
     Education: "Educação",
     secondary: "Ensino secundário completo",
     web: "Cursando Desenvolvimento web",
